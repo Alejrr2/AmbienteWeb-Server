@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Head en esta area se llama el link a bootstrapm para el area visual, adicional se llama al javascript y el css -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TusNotas.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="home.js"></script>
+</head>
+
+<body>
+    <!-- Header en esta area solo se hizo la implementación del titulo -->
+    <header>
+        <h1>
+            <h1>
+                <span class="Apela">Apela</span><span class="C">C</span><span class="R">R</span>
+              </h1>                      
+    </header>
+    
+    <!-- Nav, en el nav se hace la llamada de la barra de busqueda junto a su boton -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: gray"><!--Se establece el nav y su color-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="/home" >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="/apelaciones">Mis Apelaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="/sobreNosotros">Sobre Nosotros</a>
+                </li> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                        Más
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/usuarios">Usuarios</a></li>
+                        <li><a class="dropdown-item" href="/apelacionesAdmin">Apelaciones de Usuarios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <form class="form-inline" id="searchForm">  <!--Se crea un form donde se establece la barra de busqueda junto a su boton -->
+                <input class="form-control mr-sm-2" id="searchInput" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    
+    <aside>
+        <h3>
+            ¿Información de Contacto?
+        </h3>
+        <br>
+        <p><strong>Correo: </strong>ApelaCR@gmail.com</p>
+        <p><strong>Número de Teléfono:</strong> 88888888</p>
+        <p><strong>Facebook:</strong> ApelaCR</p>
+        <p><strong>Instagram:</strong> @ApelaCR</p>
+        <p><strong>Twitter:</strong> ApelaCR</p>
+
+    </aside>
+
+    <!-- Main, será donde aparacera el contenido principal de nuestra pagina -->
+    <main>
+        <br>
+        <h3 style="text-align: center;"> Nuestra Historia</h3>
+        <p style="text-align: center;">En el dinámico mundo de la gestión de multas vehiculares y la tecnología, nace <strong>ApelaCR</strong>, una empresa dedicada a transformar la forma en que las personas manejan sus apelaciones de multas de tránsito. Fundada en 2020, ApelaCR ha sido testigo del crecimiento exponencial de la tecnología y ha decidido liderar el camino en ofrecer soluciones innovadoras para la gestión eficiente de apelaciones relacionadas con infracciones vehiculares.</p>
+        <br>
+        <h3 style="text-align: center;">Nuestra Misión</h3>
+        <p style="text-align: center;"><strong>ApelaCR</strong> nació con una misión clara: simplificar el proceso de apelación de multas vehiculares mediante una plataforma accesible y eficaz. Creemos que es crucial proporcionar a nuestros usuarios una herramienta que les permita gestionar sus apelaciones de manera rápida y transparente, facilitando el acceso a la justicia y la resolución de conflictos relacionados con las infracciones de tránsito.</p>
+        <br>
+        <h3 style="text-align: center;">Nuestros Valores</h3>
+        <p style="text-align: center;"><strong>Innovación:</strong> Estamos comprometidos con la búsqueda constante de nuevas formas para mejorar nuestros servicios y adaptarnos a las necesidades emergentes en la gestión de multas vehiculares.</p>
+        <p style="text-align: center;"><strong>Transparencia: </strong>Valoramos la claridad en nuestros procesos, asegurando que nuestros usuarios siempre estén bien informados y puedan confiar en la integridad de nuestra plataforma.</p>
+        <p style="text-align: center;"><strong>Excelencia: </strong>Nos esforzamos por ofrecer un servicio de la más alta calidad, manteniendo estándares rigurosos en el desempeño y la seguridad de nuestra plataforma.</p>
+        <br>
+        <h3 style="text-align: center;">Nuestro Equipo</h3>
+        <p style="text-align: center;"><strong>El equipo de ApelaCR</strong> está compuesto por profesionales con experiencia en la gestión de multas vehiculares, desarrollo de software y atención al cliente. Cada miembro aporta una profunda comprensión de los desafíos en la resolución de apelaciones de multas y un compromiso firme con la satisfacción del cliente. Trabajamos juntos para asegurar que nuestra plataforma no solo cumpla, sino que supere las expectativas de nuestros usuarios.</p>
+        <br>
+        <h3 style="text-align: center;">Gracias por elegir ApelaCR.</h3>
+        <p style="text-align: center;">Tu confianza y apoyo son esenciales para nuestro éxito. Estamos entusiasmados con lo que el futuro nos depara y agradecidos de tenerte como parte de nuestra comunidad.</p>
+        
+        
+    </main>
+
+    <!-- Se crea el modal para agregar nota -->
+    
+
+    <footer>
+        <p>&copy; 2024 ApelaCR. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* Estilos generales para el cuerpo */
+body {
+    background-color: gray;
+    background-color: azure; 
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color:rgb(33, 33, 33);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: black;
+}
+
+/* Estilos para el aside */
+aside {
+    float: left;
+    width: 20%; 
+    min-height: 850px;
+    padding: 20px;
+    background-color: lightgray;
+}
+.main-content {
+  margin: 0 20px;
+}
+
+
+/* Estilo para el footer */
+footer {
+    background-color: rosybrown; 
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos para las notas */
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 20px; 
+    padding: 20px;
+}
+
+/* Estilos para cada nota */
+
+.note {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Configuraciones del boton agregar */
+.add-button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .add-button:hover {
+    background-color: rosybrown;
+  }
+  .add-button:active {
+    background-color: green;
+  }
+
+  /* Configuraciones del boton eliminar*/
+.delete-button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .delete-button:hover {
+    background-color: salmon;
+  }
+  .delete-button:active {
+    background-color: salmon;
+  }
+
+    /* Configuraciones del boton modificar*/
+.modify-button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .modify-button:hover {
+    background-color: yellow;
+  }
+  .modify-button:active {
+    background-color: yellow;
+  }
+
+  .Apela {
+    color: white;
+  }
+  
+  .C {
+    color: blue;
+  }
+  
+  .R {
+    color: red;
+  }
+  footer {
+    background-color: gray; 
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

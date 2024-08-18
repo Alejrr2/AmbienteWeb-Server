@@ -1,0 +1,30 @@
+{
+  "name": "proyectoambientewebserver",
+  "version": "1.0.0",
+  "description": "Proyecto Ambiente Web ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejrr2/AmbienteWeb-Server"
+  },
+  "keywords": [
+    "Ambiente",
+    "Web",
+    "Apelaciones",
+    "JS",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Grupo A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alejrr2/AmbienteWeb-Server"
+  },
+  "homepage": "https://github.com/cxldsakeb/Ambiente-web#readme",
+  "dependencies": {
+    "proyectoambientewebserver": "file:"
+  }
+}

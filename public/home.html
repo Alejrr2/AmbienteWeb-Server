@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Head en esta area se llama el link a bootstrapm para el area visual, adicional se llama al javascript y el css -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApelaCR.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="home.js"></script>
+</head>
+
+<body>
+    <!-- Header en esta area solo se hizo la implementación del titulo -->
+    <header>
+        <h1>
+            <h1>
+                <span class="Apela">Apela</span><span class="C">C</span><span class="R">R</span>
+              </h1>                      
+    </header>
+    
+    <!-- Nav, en el nav se hace la llamada de la barra de busqueda junto a su boton -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: gray"><!--Se establece el nav y su color-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="/home" >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="/apelaciones">Mis Apelaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="/sobreNosotros">Sobre Nosotros</a>
+                </li> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                        Más
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/usuarios">Usuarios</a></li>
+                        <li><a class="dropdown-item" href="/apelacionesAdmin">Apelaciones de Usuarios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <form class="form-inline" id="searchForm">  <!--Se crea un form donde se establece la barra de busqueda junto a su boton -->
+                <input class="form-control mr-sm-2" id="searchInput" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    
+    <aside>
+        <h3>
+            ¿Qué es una apelación?
+        </h3>
+        <br>
+        <p>Una apelación vehicular es el proceso legal mediante el cual una persona impugna o desafía una multa, infracción o sanción relacionada con su vehículo o conducta de tránsito. Esto puede incluir multas por exceso de velocidad, estacionamiento ilegal, conducir bajo la influencia de alcohol, o cualquier otra infracción de tráfico.</p>
+
+    </aside>
+
+    <!-- Main, será donde aparacera el contenido principal de nuestra pagina -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <h2 style="text-align: center;">Video Informativo</h2>
+                    <div class="embed-responsive embed-responsive-16by9" >
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1goAp0XmhZQ?si=RTROzRMxnacBZpnD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Se crea el modal para agregar nota -->
+    
+
+    <footer>
+        <p>&copy; 2024 ApelaCR. All rights reserved.</p>
+    </footer>
+</body>
+</html>
