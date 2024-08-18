@@ -9,7 +9,7 @@ const PUBLIC = path.join(__dirname, 'public');
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',   // Cambia a tu usuario de MySQL
-    password: '123456',  // Cambia a tu contraseña de MySQL
+    password: 'root',  // Cambia a tu contraseña de MySQL
     database: 'ApelacionesDB'
 });
  
