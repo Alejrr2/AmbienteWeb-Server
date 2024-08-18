@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
-    <!-- Head en esta area se llama el link a bootstrapm para el area visual, adicional se llama al javascript y el css -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TusNotas.com</title>
+    <title>Usuarios - TusNotas.com</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="home.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="home.js"></script>
+    <script defer src="usuarios.js"></script>
 </head>
-
+ 
 <body>
-    <!-- Header en esta area solo se hizo la implementación del titulo -->
     <header>
         <h1>
-            <h1>
-                <span class="Apela">Apela</span><span class="C">C</span><span class="R">R</span>
-              </h1>                      
+            <span class="Apela">Apela</span><span class="C">C</span><span class="R">R</span>
+        </h1>
     </header>
-    
-    <!-- Nav, en el nav se hace la llamada de la barra de busqueda junto a su boton -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: gray"><!--Se establece el nav y su color-->
+ 
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: gray;">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" style="color: black;" href="/home" >Home</a>
+                    <a class="nav-link" style="color: black;" href="/home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: black;" href="/apelaciones">Mis Apelaciones</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: black;" href="/sobreNosotros">Sobre Nosotros</a>
-                </li> 
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
                         Más
@@ -51,16 +45,98 @@
             </ul>
         </div>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <form class="form-inline" id="searchForm">  <!--Se crea un form donde se establece la barra de busqueda junto a su boton -->
+            <form class="form-inline" id="searchForm">
                 <input class="form-control mr-sm-2" id="searchInput" type="search" placeholder="Buscar" aria-label="Buscar">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
             </form>
         </div>
     </nav>
-    
-
-    <footer>
+        <main>
+            <button class="add-button" onclick="showAddUsuarioModal()">Agregar Usuario</button>
+ 
+            <section id="apelaciones">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Lista de Apelaciones</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover" aria-label="Lista de Apelaciones">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Username</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Role</th>
+                                                    <th>Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="usuariosBody">
+                                                <!-- Las filas se agregarán aquí con JavaScript -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+            <div id="messageContainer"></div>
+ 
+    </main>
+ 
+    <!-- Modal para agregar usuario -->
+    <div class="modal fade" id="addUsuarioModal" tabindex="-1" role="dialog" aria-labelledby="addUsuarioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content" style="background-color: rgba(33, 33, 33); color: white;">
+                <div class="modal-header bg-black text-white">
+                    <h5 class="modal-title" id="addUsuarioModalLabel">Agregar Usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addUsuarioForm">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="first_name">First Name</label>
+                            <input type="text" class="form-control" id="first_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rol">Role</label>
+                            <select class="form-control" id="rol" required>
+                                <option value="admin">Admin</option>
+                                <option value="user">User</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar Usuario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <footer class="text-center mt-4">
         <p>&copy; 2024 ApelaCR. All rights reserved.</p>
     </footer>
 </body>
 </html>
+ 
+ 
